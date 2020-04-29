@@ -1,0 +1,14 @@
+mysql>create database bankmanagement;
+
+mysql>create table bankEmployee(ID int, Employee_Name varchar(88), Father_Name varchar(88), Gender varchar(88), Dob date, Pan_no varchar(88), Addhar_no varchar(88), Address varchar(88), Phone_Number varchar(12), Email_ID varchar(88), Marital_Status varchar(88),Blood_Group varchar(88), Username varchar(88), Password varchar(88));
+
+mysql>insert into bankEmployee values( 1001, 'Rutwik', 'Dasharath', 'Male', to_date('19991104','YYYYMMDD'), 'Dosti Vihar', 9638520741, 'gaikwadrutwik@123456', 'Single', 1001, 1001);
+
+mysql>create table bankAccounts(ID int, User_Name varchar(88), Fathers_Name varchar(88), Phone_No varchar(88), Dob date, Gender varchar(88), Marital varchar(88), Address varchar(88),E_mail varchar(88), Pan varchar(88), Addhar varchar(88), Employement varchar(88), Nationality varchar(88), Education varchar(88), User_ID varchar(88), Password varchar(88));
+
+mysql>insert into bankAccounts values();
+
+mysql>create table bankTransactions(Transactions_ID int NOT NULL UNIQUE AUTO_INCREMENT, ID int, Date date, Particulars varchar(88), Ref_No varchar(88), Withdrawal varchar(88), Deposit varchar(88), Balance decimal(12,2));
+
+mysql>insert into bankTransactions(ID,Date,Particulars,Ref_No,Withdrawal,Deposit,Balance) values( 2001, '19991104', 'cash', '12587', '14.25', '', '25.25');
+
